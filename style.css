@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  body {
+    margin: 0;
+    background: #ffffff;
+    color: #111111;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  
+  /* --------------------
+     Navigation
+  -------------------- */
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+  
+    display: flex;
+    justify-content: center;
+  
+    padding: 22px 50px;
+  
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  
+    border-bottom: 1px solid #efefef;
+  
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    gap: 45px;
+  }
+  
+  
+  nav a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: opacity 0.2s ease;
+  }
+  
+  
+  nav a:hover {
+    opacity: 0.5;
+  }
+  
+  
+  
+  /* --------------------
+     Hero
+  -------------------- */
+  
+  .hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+    padding:
+      150px  /* top */
+      40px
+      100px;
+  }
+  
+  
+  .hero img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+  }
+  
+  
+  
+  /* --------------------
+     Sections
+  -------------------- */
+  
+  .section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 90px 40px;
+  }
+  
+  
+  .section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 0 60px;
+  }
+  
+  
+  
+  /* --------------------
+     Products
+  -------------------- */
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+  }
+  
+  
+  .product-card {
+    text-align: center;
+  }
+  
+  
+  .product-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    display: block;
+  }
+  
+  
+  .product-info {
+    margin-top: 30px;
+  }
+  
+  
+  .product-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    font-size: 24px;
+    margin: 0 0 8px;
+  }
+  
+  
+  .product-card p {
+    margin: 0;
+    color: #555555;
+    font-size: 15px;
+  }
+  
+  
+  
+  /* --------------------
+     Order Button
+  -------------------- */
+  
+  .order-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 32px;
+  
+    border: 1px solid #111111;
+  
+    color: #111111;
+    text-decoration: none;
+  
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  
+    transition:
+      background-color 0.25s ease,
+      color 0.25s ease;
+  }
+  
+  
+  .order-button:hover {
+    background-color: #111111;
+    color: #ffffff;
+  }
+  
+  
+  
+  /* --------------------
+     About + Contact
+  -------------------- */
+  
+  .about,
+  .contact {
+    max-width: 700px;
+    text-align: center;
+  }
+  
+  
+  .about p,
+  .contact p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #333333;
+  }
+  
+  
+  .contact a {
+    color: inherit;
+  }
+  
+  
+  
+  /* --------------------
+     Footer
+  -------------------- */
+  
+  footer {
+    padding: 70px 40px;
+    text-align: center;
+  
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #777777;
+  }
+  
+  
+  
+  /* --------------------
+     Mobile
+  -------------------- */
+  
+  @media (max-width: 800px) {
+  
+  
+    .header {
+      padding: 30px 20px;
+    }
+  
+  
+    nav {
+      gap: 25px;
+    }
+  
+  
+    .hero {
+      padding: 60px 20px;
+    }
+  
+  
+    .section {
+      padding: 60px 25px;
+    }
+  
+  
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+  
+  
+    .product-grid {
+      grid-template-columns: 1fr;
+      gap: 60px;
+    }
+  
+  
+    .product-card img {
+      height: 300px;
+    }
+  }
+
+    /* --------------------
+   Order Form
+-------------------- */
+
+.order-section {
+  max-width: 600px;
+  text-align: center;
+}
+
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: left;
+}
+
+
+.order-form label {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+
+  width: 100%;
+
+  margin-top: 8px;
+
+  padding: 14px;
+
+  border: 1px solid #cccccc;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  background: white;
+
+}
+
+
+.order-form textarea {
+  resize: vertical;
+}
+
+
+.order-form input:focus,
+.order-form select:focus,
+.order-form textarea:focus {
+
+  outline: none;
+
+  border-color: #111111;
+
+}

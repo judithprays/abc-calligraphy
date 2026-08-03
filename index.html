@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>
+    ABC | A Calligraphy Company By Tiffy Mallinger
+  </title>
+
+  <meta 
+    name="description" 
+    content="Handcrafted calligraphy pieces by Tiferes Chedva Mallinger in Atlanta, Georgia."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+
+  <header class="header">
+
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+
+    <!-- Hero Image -->
+    <section class="hero">
+
+      <img 
+        src="images/tiffysHero.jpeg" 
+        alt="Tiffy Mallinger holding her ABC Calligraphy logo"
+      />
+
+    </section>
+
+
+
+    <!-- Shop -->
+    <section id="shop" class="section">
+
+      <h2>Shop</h2>
+
+      <div 
+        id="products" 
+        class="product-grid">
+      </div>
+
+    </section>
+
+
+
+
+    <!-- About -->
+    <section id="about" class="section about">
+
+      <h2>About</h2>
+
+      <p>
+        Tiferes Chedva is a budding calligrapher working on her craft 
+        located in Atlanta, Georgia.
+      </p>
+
+    </section>
+
+    <section id="order" class="section order-section">
+
+      <h2>Request an Order</h2>
+    
+      <p>
+        Please fill out the form below and Tiffy will follow up with payment details.
+      </p>
+    
+    
+      <form 
+        action="https://formspree.io/f/xlgqqzal" 
+        method="POST"
+        class="order-form"
+      >
+    
+        <label>
+          Name
+          <input 
+            type="text" 
+            name="name" 
+            required
+          >
+        </label>
+    
+    
+        <label>
+          Preferred Contact Information
+          <input 
+            type="text" 
+            name="contact" 
+            required
+          >
+        </label>
+    
+    
+        <label>
+          What would you like to order?
+          <select name="product" required>
+    
+            <option value="">
+              Select an item
+            </option>
+    
+            <option value="Kosel Mug">
+              Kosel Mug ($25)
+            </option>
+    
+            <option value="Shma Mug">
+              Shma Mug ($25)
+            </option>
+    
+            <option value="Custom Order">
+              Custom Order
+            </option>
+
+            <option value="Other">
+              Other
+            </option>
+    
+          </select>
+        </label>
+    
+    
+        <label>
+          Preferred payment method
+          <select name="payment" required>
+    
+            <option value="">
+              Select payment method
+            </option>
+    
+            <option value="Zelle">
+              Zelle
+            </option>
+    
+            <option value="Other">
+              Other
+            </option>
+    
+          </select>
+        </label>
+    
+    
+        <label>
+          Notes
+          <textarea 
+            name="message"
+            rows="5"
+          ></textarea>
+        </label>
+    
+    
+        <button type="submit" class="order-button">
+          Submit Request
+        </button>
+    
+    
+      </form>
+    
+    </section>
+
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+
+      <h2>Contact</h2>
+
+      <p>
+        Orders are placed via Zelle.
+        Please contact 
+        <a href="mailto:themallingers@gmail.com">
+          themallingers@gmail.com
+        </a>
+        for more information.
+      </p>
+
+    </section>
+
+
+  </main>
+
+
+
+
+  <footer>
+
+    <p>
+      © ABC A Calligraphy Company By Tiffy Mallinger
+    </p>
+
+  </footer>
+
+
+
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
